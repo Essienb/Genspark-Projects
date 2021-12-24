@@ -14,9 +14,12 @@ public class Dragon_Cave {
         String playerAction = "Ran away out of fear";
         int dragonCaves = 1;
 
+
+        //This will allow us pass an int input to simulate the various scenarios
         Scanner sc = new Scanner(System.in);
         dragonCaves = sc.nextInt();
 
+        //To be able to pass a String input as an integer
         friendlyDragon = Integer.toString(dragonCaves);
         hungryDragon = Integer.toString(dragonCaves);
 
@@ -25,9 +28,11 @@ public class Dragon_Cave {
 
         //System.out.println(result);
 
-
+        //Loop statement to check the various possibilities or outcomes for the players
         if (dragonCaves > 1) {
 
+
+            //Print out the result of the loop based on players input
             System.out.println("Player in hungrayDragon Cave: " + cave2);
 
 
@@ -38,7 +43,7 @@ public class Dragon_Cave {
         }
 
 
-
+        //if all conditions fail, then the below statement is printed
         else {
             System.out.println("Player did not attempt to enter Cave: " + playerAction);
         }
