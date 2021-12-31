@@ -9,7 +9,7 @@ public class Guess_The_Number {
         System.out.println("Hello! What is your name? ");
 
         Scanner input = new Scanner(System.in);
-        try {
+        try{
             boolean yes = false;
             boolean no = false;
             do {
@@ -49,11 +49,14 @@ public class Guess_The_Number {
                 }
 
                 System.out.println("Would you like to play again? (yes/no) ");
-            }
-            while (input.hasNextBoolean() !=no){
+                input.hasNextBoolean();
+            //(input.hasNextBoolean() !=no){
                 System.out.println("Let's start all over! " + input.nextInt());
             }
+        while (input.equals(yes));
+            {
                 input.reset();
+            }
             if (input.equals(no)) {
                 System.out.println("End of Guess a number game! ");
            //}
@@ -65,7 +68,3 @@ public class Guess_The_Number {
 }
 }
 }
-
-
-
-
