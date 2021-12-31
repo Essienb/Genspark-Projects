@@ -31,18 +31,13 @@ public class Dragon_Cave {
         //Loop statement to check the various possibilities or outcomes for the players
         if (dragonCaves > 1) {
 
-
             //Print out the result of the loop based on players input
             System.out.println("Player in hungrayDragon Cave: " + cave2);
-
-
         }
         else if (dragonCaves == 1) {
 
             System.out.println("Player is in friendlyDragon Cave: " + cave1);
         }
-
-
         //if all conditions fail, then the below statement is printed
         else {
             System.out.println("Player did not attempt to enter Cave: " + playerAction);
